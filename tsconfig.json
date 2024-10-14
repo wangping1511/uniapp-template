@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "lib": ["esnext", "dom"],
+    "baseUrl": ".",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "paths": {
+      "~/*": ["./src/*"]
+    },
+    "resolveJsonModule": true,
+    "types": [
+      "@dcloudio/types",
+      "@uni-helper/uni-types",
+      "wot-design-uni/global",
+      "z-paging/global.d.ts"
+    ],
+    "allowJs": true,
+    "noImplicitThis": true,
+    "outDir": "dist",
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true
+  },
+  "vueCompilerOptions": {
+    "target": 3,
+    "plugins": ["@uni-helper/uni-types/volar-plugin"]
+  },
+  "exclude": ["dist", "node_modules"]
+}
